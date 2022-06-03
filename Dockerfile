@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y nginx=$NGINX_VERSION
 WORKDIR /var/www/html
 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page279/jack-and-rose.zip .
-
+RUN unzip jack-and-rose.zip
 EXPOSE 80
 
 HEALTHCHECK CMD curl localhost:80
