@@ -16,7 +16,7 @@ EXPOSE 80
 
 HEALTHCHECK CMD curl localhost:80
 
-VOLUME ["/usr/share/nginx/html/"]
+VOLUME ["/var/www/html"]
 
 CMD ["nginx", "-g", "daemon off;"]
 
